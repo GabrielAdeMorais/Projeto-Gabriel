@@ -26,9 +26,10 @@ elif media >= 5:
 else:
     situacao = "O aluno está reprovado!"
 
-print("==============================")
-print("      RESULTADO FINAL      ")
-print("==============================")
+print("")
+print("=" * 30)
+print("       RESULTADO FINAL      ")
+print("=" * 30)
 print(f"Nome do estudante: {aluno}")
 print(f"Média final:       {media:.2f}")
 print(f"Frequência:        {freq}%")
