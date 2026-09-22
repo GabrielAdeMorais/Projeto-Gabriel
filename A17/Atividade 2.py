@@ -41,5 +41,3 @@ print (f"Valor final: R$ {valorFinal}")
 
 
 
-
-
