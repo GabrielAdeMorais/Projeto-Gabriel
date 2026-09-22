@@ -19,15 +19,44 @@ while pagamento <=0 or pagamento >4:
 if pagamento == 1:
     desconto = (subtotal*10)/100
     valorFinal = subtotal - desconto
+    forma = "PIX"
 elif pagamento == 2:
     desconto = (subtotal*8)/100
     valorFinal = subtotal - desconto
+    forma = "Dinheiro"
 elif pagamento == 3:
     desconto = (subtotal*5)/100
     valorFinal = subtotal - desconto
+    forma = "Cartão de débito"
 else:
-    valorFinal = subtotal
-    print ("Informe a quantidade de parcelas: ")
+    desconto = 0
+    forma = "Cartão de crédito"
+    
+    parcela = int(input("Informe a quantidade de parcelas: "))
+
+    while parcela <= 0 or parcela > 12:
+        parcela = int(input("Selecione uma quantidade de parcelas válida: "))
+
+    if parcela <= 3:
+        juros = 0
+    else:
+        juros = (subtotal * 6) / 100
+
+    valorFinal = subtotal + juros
+
+print("")
+print("========== COMPROVANTE ==========")
+print("Cliente:", nome)
+print("Produto:", produto)
+print("Subtotal: R$", subtotal)
+
+if pagamento == 4:
+    print("Acréscimo: R$", juros)
+else:
+    print("Desconto: R$", desconto)
+
+print("Valor final: R$", valorFinal)
+print("Forma de pagamento:", forma)
 
  
 
