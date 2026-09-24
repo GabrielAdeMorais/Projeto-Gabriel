@@ -1,3 +1,4 @@
+#Solicitação de informação
 nome = input("Digite o nome do participante: ")
 idade = int(input("Digite a idade: "))
 quantidade = int(input("Digite a quantidade de ingressos: "))
@@ -7,6 +8,7 @@ print("2 - Professor")
 print("3 - Público geral")
 categoria = int(input("Digite a categoria: "))
 
+#If para o valor do ingresso
 if categoria == 1:
     valor_ingresso = 20
     nome_categoria = "Estudante"
@@ -19,6 +21,7 @@ else:
 
 valor_original = valor_ingresso * quantidade
 
+#If para o desconto e valor final
 if idade < 10:
     desconto = valor_original
     valor_final = 0
@@ -32,6 +35,7 @@ else:
     desconto = 0
     valor_final = valor_original
 
+#Resumo da compra
 print("")
 print("--- RESUMO DA COMPRA ---")
 print("Nome:", nome)

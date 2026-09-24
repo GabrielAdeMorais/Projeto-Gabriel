@@ -1,3 +1,4 @@
+#Solicitação de informação
 nome = input("Digite o nome do consumidor: ")
 consumo = float(input("Digite o consumo mensal em kWh: "))
 
@@ -6,6 +7,7 @@ print("C - Comercial")
 print("I - Industrial")
 tipo = input("Digite o tipo de instalação: ")
 
+#If para atribuir o valor do consumo
 if tipo == "R":
     if consumo <= 100:
         valor_consumo = consumo * 0.60
@@ -33,6 +35,7 @@ elif consumo <= 250:
 else:
     classificacao = "Elevado"
 
+#Resumo da conta
 print("")
 print("--- RESUMO DA CONTA ---")
 print("Nome:", nome)

@@ -1,3 +1,4 @@
+#Solicitação das insformações
 nome = str (input("Digite seu nome: "))
 produto = str (input("Informe seu produto: "))
 preco_unitario = float(input("Informe o preço unitário do produto: "))
@@ -5,6 +6,7 @@ quantidade = int (input("Informe a quantidade comprada: "))
 
 subtotal = preco_unitario*quantidade
 
+#Método de pagamento
 print ("")
 print ("Qual será a forma de pagamento?")
 print ("1- PIX")
@@ -44,6 +46,7 @@ else:
 
     valorFinal = subtotal + juros
 
+#Comprovante da compra
 print("")
 print("========== COMPROVANTE ==========")
 print("Cliente:", nome)

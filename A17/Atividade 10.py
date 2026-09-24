@@ -1,3 +1,4 @@
+#Solicitação de informação
 nome = input("Digite o nome do consumidor: ")
 consumo = float(input("Digite o consumo de água em m3: "))
 
@@ -5,6 +6,7 @@ print("1 - Residencial")
 print("2 - Comercial")
 tipo = int(input("Digite o tipo de imóvel: "))
 
+#If para o valor da tarifa
 if tipo == 1:
     if consumo <= 10:
         tarifa = 2
@@ -20,6 +22,7 @@ else:
     else:
         tarifa = 7
 
+#Calculo do consumo
 valor_consumo = consumo * tarifa
 taxa_servico = 12
 
@@ -30,6 +33,7 @@ else:
 
 total = valor_consumo + taxa_servico + multa
 
+#If para classificação
 if consumo <= 10:
     classificacao = "Baixo"
 elif consumo <= 30:
@@ -37,6 +41,7 @@ elif consumo <= 30:
 else:
     classificacao = "Elevado"
 
+#Resumo da conta
 print("")
 print("--- RESUMO DA CONTA ---")
 print("Nome:", nome)

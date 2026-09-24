@@ -1,11 +1,14 @@
+#Solicitação das informações
 placvei = str (input("Informe a placa do veículo: "))
 horas = float (input("Informe quanto tempo o veículo ficou estacionado: "))
 
 
 
+#Estrutura de repetição para verificar se o número é menor que 0
 while horas < 0:
     horas = float(input("Valor inválido, informe as horas novamente: "))
 
+#If usado para calcular o preço do estacionamento
 if horas <= 1:
     valor = 8.00
 elif horas > 1 and horas <= 3:
@@ -29,6 +32,7 @@ else:
     desconto = 0
     valorFinal = valor
 
+#Relatório final
 print("=" * 30)
 print("          Relatório         ")
 print("=" * 30)

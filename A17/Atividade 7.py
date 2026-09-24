@@ -1,3 +1,4 @@
+#Solicitação de informação do usuário
 nome = input("Digite o nome do funcionário: ")
 horas_trabalhadas = float(input("Digite a quantidade de horas trabalhadas: "))
 valor_hora = float(input("Digite o valor recebido por hora: R$ "))
@@ -12,6 +13,7 @@ total_horas_extras = horas_extras * valor_hora_extra
 
 salario_bruto = salario_base + total_horas_extras
 
+#If para o INSS
 if salario_bruto <= 1500:
     inss = salario_bruto * 0.05
 elif salario_bruto <= 3000:
@@ -19,6 +21,7 @@ elif salario_bruto <= 3000:
 else:
     inss = salario_bruto * 0.11
 
+#If para o desconto do vale transporte
 if vale_transporte == "S":
     desconto_vale = salario_base * 0.06
 else:
@@ -28,6 +31,7 @@ descontos = inss + desconto_vale
 
 salario_liquido = salario_bruto - descontos
 
+#Resumo do salário
 print("")
 print("--- RESUMO DO SALÁRIO ---")
 print("Nome:", nome)

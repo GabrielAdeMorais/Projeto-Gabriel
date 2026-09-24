@@ -1,3 +1,4 @@
+#Solicitação de informação do usuário
 nome = input("Digite o nome do cliente: ")
 renda = float(input("Digite a renda mensal: R$ "))
 valor_emprestimo = float(input("Digite o valor solicitado: R$ "))
@@ -6,6 +7,7 @@ divida = input("Possui alguma dívida em atraso? S ou N: ")
 
 valor_parcela = valor_emprestimo / quantidade_parcelas
 
+#If para verificar o empréstimo
 if divida == "S":
     resultado = "Empréstimo negado"
     motivo = "Possui dívida em atraso"
@@ -22,6 +24,7 @@ else:
     resultado = "Empréstimo aprovado"
     motivo = "Nenhum"
 
+#Resumo do empréstimo
 print("")
 print("--- RESUMO DO EMPRÉSTIMO ---")
 print("Nome:", nome)

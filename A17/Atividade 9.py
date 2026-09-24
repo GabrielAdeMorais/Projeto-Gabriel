@@ -1,9 +1,11 @@
+#Solicitação de informação
 distancia = float(input("Digite a distância total da viagem em km: "))
 consumo_medio = float(input("Digite o consumo médio do veículo em km/l: "))
 litros_disponiveis = float(input("Digite a quantidade de litros disponíveis: "))
 preco_litro = float(input("Digite o preço do litro do combustível: R$ "))
 pedagio = input("A viagem inclui pedágio? S ou N: ")
 
+#Calculo
 litros_necessarios = distancia / consumo_medio
 custo_combustivel = litros_necessarios * preco_litro
 
@@ -16,6 +18,7 @@ else:
 
 custo_total = custo_combustivel + custo_pedagios
 
+#If para saber se é suficiente ou insuficiente
 if litros_disponiveis >= litros_necessarios:
     combustivel = "Suficiente"
     litros_restantes = litros_disponiveis - litros_necessarios
@@ -23,6 +26,7 @@ else:
     combustivel = "Insuficiente"
     litros_restantes = litros_necessarios - litros_disponiveis
 
+#Resumo da viagem
 print("")
 print("--- RESUMO DA VIAGEM ---")
 print("Litros necessários:", litros_necessarios)

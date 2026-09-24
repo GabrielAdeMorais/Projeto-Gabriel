@@ -1,11 +1,14 @@
+#Mensagem de boas vindas ao usuário
 print ("Bem vindo a Escola Virtual Senao")
 
+#Coleta de dados do usuário
 aluno = str (input("Digite o nome do aluno: "))
 
 nota1 = 0
 nota2 = 0
 nota3 = 0
 
+#Estrutura de repetição para verificar se o número é maior que 10 ou menor que 0
 while (nota1 < 1 or nota1 >10) or (nota2 < 1 or nota2 >10) or (nota3 < 1 or nota3 > 10):
     print("Digite uma nota válida de 0 a 10: ")
     nota1 = int(input("Digite a primeira nota: "))
@@ -26,6 +29,7 @@ elif media >= 5:
 else:
     situacao = "O aluno está reprovado!"
 
+#Resultado final
 print("")
 print("=" * 30)
 print("       RESULTADO FINAL      ")
