@@ -1,3 +1,4 @@
+#Função
 def verificar_situacao(media):
     if (media>=7):
         return "Aprovado"
@@ -6,5 +7,6 @@ def verificar_situacao(media):
     else:
         return "Reprovado"
 
+#Solicitação da média e resultado
 media = float(input("Digite sua média: "))
 print(verificar_situacao(media))

@@ -1,3 +1,4 @@
+#Funções
 def somar(n1,n2):
     return n1+n2
 
@@ -10,9 +11,11 @@ def multiplicar(n1,n2):
 def dividir(n1,n2):
     return n1/n2
 
+#Solicitação dos números
 n1 = float(input("Digite o primeiro número: "))
 n2 = float(input("Digite o segundo número: "))
 
+#Print das opções
 print("")
 print("Escolha uma das opções abaixo: ")
 print("1- Somar.")
@@ -23,6 +26,7 @@ print("4- Dividir.")
 print("")
 opcao = int(input("Escolha uma opção: "))
 
+#Se para verificar o tipo de operação
 if opcao == 1:
     resultado = somar(n1,n2)
 elif opcao == 2:
@@ -32,6 +36,7 @@ elif opcao == 3:
 else:
     resultado = dividir(n1,n2)
 
+#Resultado
 print("")
 print("=" * 30)
 print("RESULTADO".center(30))
