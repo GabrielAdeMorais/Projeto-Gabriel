@@ -1,0 +1,17 @@
+Desafio extra
+Analise os três cenários abaixo e determine qual estrutura de repetição você
+utilizaria em cada situação:
+
+Situação A
+Um sistema precisa executar uma tarefa exatamente 10 vezes.
+Estrutura escolhida: for
+
+Situação B
+Um sistema precisa continuar solicitando uma senha enquanto o usuário não
+informar a senha correta.
+Estrutura escolhida: while
+
+Situação C
+Um sistema precisa solicitar uma informação pelo menos uma vez e continuar
+solicitando enquanto o valor informado for inválido.
+Estrutura escolhida: do while
