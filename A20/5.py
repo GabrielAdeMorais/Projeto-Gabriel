@@ -1,4 +1,4 @@
-#LISTA tetsakdhaskd
+#LISTA
 estacionamento = []
 
 #ESTRUTURA DE REPETIÇÃO
