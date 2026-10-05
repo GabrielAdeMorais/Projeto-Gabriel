@@ -1,11 +1,10 @@
+#LISTA
 veiculos = []
 
-contador = 0
-
+#ESTRUTURA DE REPETIÇÃO
 for i in range(4):
-    contador = contador + 1
 
-    codigo = int(input(f"Digite o código do {contador}° veículo: "))
+    codigo = int(input(f"Digite o código do {i+1}° veículo: "))
     placa = input("Digite a placa: ")
     modelo = input("Digite o modelo: ")
     marca = input("Digite a marca: ")
@@ -13,6 +12,7 @@ for i in range(4):
     quilometragem = int(input("Digite a quilometragem: "))
     situacao = input("Digite a situação: ")
 
+    #DICIONÁRIO
     veiculo = {
         "codigo": codigo,
         "placa": placa,
@@ -39,8 +39,10 @@ for veiculo in veiculos:
 
 placa_busca = input("Digite a placa do veículo que deseja procurar: ")
 
+#VARIÁVEL CRIADA PARA VERIFICAR UMA CONDIÇÃO
 encontrado = False
 
+#FOR JUNTO COM PRINT E IF USADO PARA MOSTRAR AS INFORMAÇÕES PARA O USUÁRIO
 for veiculo in veiculos:
     if veiculo["placa"] == placa_busca:
         print("\nVeículo encontrado.")

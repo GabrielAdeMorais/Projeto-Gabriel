@@ -1,5 +1,7 @@
+#LISTA
 producao = []
 
+#ESTRUTURA DE REPETIÇÃO
 for i in range(3):
     maquina = []
 
@@ -19,6 +21,7 @@ for i in range(3):
     for quantidade in producao[i]:
         total = total + quantidade
 
+    #FUNÇÃO APPEND
     totais.append(total)
 
     print("Máquina", i + 1, ":", total, "unidades")

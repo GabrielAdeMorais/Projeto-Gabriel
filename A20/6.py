@@ -1,5 +1,7 @@
+#LISTA
 salas = []
 
+#ESTRUTURA DE REPETIÇÃO
 for i in range(3):
     sala = []
 

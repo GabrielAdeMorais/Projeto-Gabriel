@@ -1,16 +1,16 @@
+#LISTA
 funcionarios = []
 
-contador = 0
-
+#ESTRUTURA DE REPETIÇÃO
 for i in range(5):
-    contador = contador + 1
 
-    matricula = int(input(f"Digite a matrícula do {contador}° funcionário: "))
+    matricula = int(input(f"Digite a matrícula do {i+1}° funcionário: "))
     nome = input("Digite o nome do funcionário: ")
     setor = input("Digite o setor: ")
     cargo = input("Digite o cargo: ")
     salario = float(input("Digite o salário: "))
 
+    #DICIONÁRIO
     funcionario = {
         "matricula": matricula,
         "nome": nome,
@@ -19,6 +19,7 @@ for i in range(5):
         "salario": salario
     }
 
+    #FUNÇÃO APPEND
     funcionarios.append(funcionario)
 
 print("\nFuncionários cadastrados:")
@@ -33,6 +34,7 @@ for funcionario in funcionarios:
 
 matricula_busca = int(input("Digite a matrícula do funcionário que deseja procurar: "))
 
+#VARIÁVEL CRIADA PARA VERIFICAR UMA CONDIÇÃO
 encontrado = False
 
 for funcionario in funcionarios:

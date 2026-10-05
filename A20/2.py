@@ -1,17 +1,18 @@
+#LISTA
 estoque = []
 
-contador = 0
 
+#ESTRUTURA DE REPETIÇÃO
 for i in range(5):
-    contador = contador + 1
 
-    codigo = int(input(f"Digite o código do {contador}° produto: "))
+    codigo = int(input(f"Digite o código do {i+1}° produto: "))
     nome = input("Digite o nome do produto: ")
     categoria = input("Digite a categoria do produto: ")
     quantidade = int(input("Digite a quantidade atual: "))
     quantidade_minima = int(input("Digite a quantidade mínima: "))
     preco = float(input("Digite o preço do produto: "))
 
+    #DICIONÁRIO
     produto = {
         "codigo": codigo,
         "nome": nome,
@@ -21,6 +22,7 @@ for i in range(5):
         "preco": preco
     }
 
+    #FUNÇÃO APPEND
     estoque.append(produto)
 
 print("\nProdutos cadastrados:")

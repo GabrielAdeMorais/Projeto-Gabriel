@@ -1,5 +1,7 @@
+#LISTA
 estacionamento = []
 
+#ESTRUTURA DE REPETIÇÃO
 for i in range(3):
     fileira = []
 
@@ -7,6 +9,7 @@ for i in range(3):
         vaga = int(input(f"Digite a situação da vaga {j + 1} da fileira {i + 1} (0 = livre, 1 = ocupada): "))
         fileira.append(vaga)
 
+    #FUNÇÃO APPEND
     estacionamento.append(fileira)
 
 print("\nESTACIONAMENTO:")

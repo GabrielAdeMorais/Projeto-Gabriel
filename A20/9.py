@@ -1,17 +1,17 @@
+#LISTA
 pedidos = []
 
-contador = 0
-
+#ESTRUTURA DE REPETIÇÃO
 for i in range(5):
-    contador = contador + 1
 
-    numero = int(input(f"Digite o número do {contador}° pedido: "))
+    numero = int(input(f"Digite o número do {i+1}° pedido: "))
     cliente = input("Digite o nome do cliente: ")
     produto = input("Digite o produto: ")
     quantidade = int(input("Digite a quantidade: "))
     valor_unitario = float(input("Digite o valor unitário: "))
     situacao = input("Digite a situação do pedido: ")
 
+    #DICIONÁRIO
     pedido = {
         "numero": numero,
         "cliente": cliente,
@@ -21,6 +21,7 @@ for i in range(5):
         "situacao": situacao
     }
 
+    #FUNÇÃO APPEND
     pedidos.append(pedido)
 
 print("\nPEDIDOS CADASTRADOS:")
@@ -39,6 +40,7 @@ for pedido in pedidos:
 
 numero_busca = int(input("Digite o número do pedido que deseja procurar: "))
 
+#VARIÁVEL CRIADA PARA VERIFICAR CONDIÇÃO
 encontrado = False
 
 for pedido in pedidos:

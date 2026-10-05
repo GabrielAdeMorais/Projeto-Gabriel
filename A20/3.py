@@ -1,16 +1,16 @@
+#LISTA
 livros = []
 
-contador = 0
-
+#ESTRUTURA DE REPETIÇÃO
 for i in range(4):
-    contador = contador + 1
 
-    codigo = int(input(f"Digite o código do {contador}° livro: "))
+    codigo = int(input(f"Digite o código do {i+1}° livro: "))
     titulo = input("Digite o título do livro: ")
     autor = input("Digite o autor do livro: ")
     ano = int(input("Digite o ano de publicação: "))
     quantidade = int(input("Digite a quantidade disponível: "))
 
+    #DICIONÁRIO
     livro = {
         "codigo": codigo,
         "titulo": titulo,
@@ -19,6 +19,7 @@ for i in range(4):
         "quantidade": quantidade
     }
 
+    #FUNÇÃO APPEND
     livros.append(livro)
 
 print("\nLivros cadastrados:")
@@ -33,6 +34,7 @@ for livro in livros:
 
 codigo_busca = int(input("Digite o código do livro que deseja procurar: "))
 
+#VARIÁVEL CRIADA PARA VERIFICAR UMA CONDIÇÃO
 encontrado = False
 
 for livro in livros:
