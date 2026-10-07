@@ -1,10 +1,11 @@
 #LISTA
-veiculos = []
+veiculos = [1,2,3,4]
 
 #ESTRUTURA DE REPETIÇÃO
-for i in range(4):
 
-    codigo = int(input(f"Digite o código do {i+1}° veículo: "))
+for i in range(5):
+
+    codigo = int(input(f"Digite o código do { i + 1 }° veículo: "))
     placa = input("Digite a placa: ")
     modelo = input("Digite o modelo: ")
     marca = input("Digite a marca: ")
@@ -28,13 +29,7 @@ for i in range(4):
 print("\nVEÍCULOS CADASTRADOS:")
 
 for veiculo in veiculos:
-    print("Código:", veiculo["codigo"])
-    print("Placa:", veiculo["placa"])
-    print("Modelo:", veiculo["modelo"])
-    print("Marca:", veiculo["marca"])
-    print("Ano:", veiculo["ano"])
-    print("Quilometragem:", veiculo["quilometragem"])
-    print("Situação:", veiculo["situacao"])
+    print(veiculo)
     print()
 
 placa_busca = input("Digite a placa do veículo que deseja procurar: ")
