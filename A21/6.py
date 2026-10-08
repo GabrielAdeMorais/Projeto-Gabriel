@@ -11,7 +11,7 @@ for i in range (len(documentos)):
     print(f"Documento sendo impresso: {imprimido}")
     sleep(3)
     print ("Impressão concluída!")
-    print ("")
+    print ("----------------------------------")
 
 
 print ("Todos documentos foram impressos.")
