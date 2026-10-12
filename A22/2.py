@@ -4,5 +4,6 @@ def contar_alunos(quantidade):
     contar_alunos(quantidade - 1)
     print("Aluno", quantidade)
 
+numero_alunos = int(input("Digite a quantidade de alunos: "))
 print("Contagem de aluno iniciando!")
-contar_alunos(5)
+contar_alunos(numero_alunos)

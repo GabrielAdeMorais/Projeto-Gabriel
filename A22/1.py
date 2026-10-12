@@ -4,5 +4,7 @@ def contagem_regressiva(numero):
     print(numero)
     contagem_regressiva(numero - 1)
 
+numero_usuario = int(input("Digite um número: "))
+
 print("Contagem regressiva iniciando!")
-contagem_regressiva(5)
+contagem_regressiva(numero_usuario)

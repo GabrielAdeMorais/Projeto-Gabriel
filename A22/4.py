@@ -6,5 +6,5 @@ def descer_elevador(andar):
     print(andar)
     descer_elevador(andar - 1)
 
-
-descer_elevador(5)
+andares = int(input("Digite a quantidade de andares: "))
+descer_elevador(andares)
